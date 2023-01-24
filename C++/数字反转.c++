@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int N,d[12],k=0,j=0,M,i=0;
+    int N,d[12],k=0,j=0,M,i=-1,o=0;
     cin>>N;
     if(N<0){
         M=-N;
@@ -15,11 +15,14 @@ int main(){
         d[k]=M/i%10;
         k++;
     }
-    if(d[i]==0){
-        j=1;
+    do{
         ++i;
+    }while(d[i]==0);
+    if(i!=0){
+        j=i;
     }
     else j=0;
+
     if(N>0){
         for(j;j<k;j++){
             printf("%d",d[j]);
