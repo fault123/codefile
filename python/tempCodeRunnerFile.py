@@ -1,0 +1,4 @@
+import pickle
+import base64
+a="gASVWQAAAAAAAAB9lCiMBW1vbmV5lEsBjAdoaXN0b3J5lF2UjBBhbnRpX3RhbXBlcl9obWFjlIwoZDNkNmE5YzhhYTRhYWYwN2Y3MGVlZjBkM2QyYWQwZTRjMDYyOTQ1ZpR1Lg=="
+print(pickle.loads(base64.b64decode(a)))

