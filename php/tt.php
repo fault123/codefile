@@ -1,3 +1,8 @@
 <?php
-$a='hahahaadmin';
-{"result":"nothing here hhhh\r\n"}
+$a="file=hint.php?";
+$a=mb_substr(
+    $a,
+    0,
+    13
+);
+var_dump($a);
