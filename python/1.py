@@ -28,5 +28,9 @@
 # result = 'gopher://127.0.0.1:80/'+'_'+new
 # result = urllib.parse.quote(result)
 # print(result)       # 因为是GET请求所以要进行两次url编码
-sleep(600)
-print(1)
+# sleep(600)
+# print(1)
+# a="123-456 =?"
+# print(a[:-2])
+a='gASVLwAAAAAAAACMK1pTQ1RGe2JjNGI5MGNmLTI1OGYtNDBjNC1lYzQzLTA4YjE2NzY2ZDllNX2ULg=='
+print(a[::-1])

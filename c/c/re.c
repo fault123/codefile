@@ -1,0 +1,27 @@
+#include <stdio.h>
+int a[] = {0x3F, 0x8F, 0x0A3, 0x0BC, 0x8D, 0x27, 0x7A, 0x67, 0x0E2, 0x3, 0x0A2, 0x0E0, 0x0AC, 0x0EA, 0x95, 0x8B, 0x0A3, 0x0ED, 0x0CC, 0x0B6, 0x32, 0x8C, 0x94, 0x52, 0x82, 0x8A, 0x14, 0x0C6, 0x0F5, 0x0AE, 0x68, 0x73, 0x0};
+int v1, v2, v3, v4;
+int i;
+void decode()//对encode进行解密
+{
+    v4 = a[i - 3], v3 = a[i - 2], v2 = a[i - 1], v1 = a[i];
+    a[i - 3] = ((v4 >> 7) & 0x1) | (((v2 ^ v3) << 1) & 0xfe);
+    a[i - 2] = (((v2 ^ v3) >> 7) & 0x1) | ((v4 << 1) & 0xfe);
+    a[i - 1] = (((v1 ^ v2) << 2) & 0xfc) | (((v3 ^ v4) >> 6) & 0x3);
+    a[i] = (((v3 ^ v4) << 2) & 0xfc) | (((v1 ^ v2) >> 6) & 0x3);
+}
+int main()
+{
+    i = 31;
+    while (i >= 3)
+    {
+        decode();
+        i--;
+    }
+    for (int j = 0; j <= 32; j++)
+    {
+        a[j] ^= 0x11;
+        printf("%c", a[j]);
+    }
+    return 0;
+}

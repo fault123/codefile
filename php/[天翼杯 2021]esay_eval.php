@@ -14,3 +14,4 @@ class A{
 $b=new B;
 echo(serialize($b));
 
+

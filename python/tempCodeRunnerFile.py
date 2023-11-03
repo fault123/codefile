@@ -1,4 +1,2 @@
-import pickle
-import base64
-a="gASVWQAAAAAAAAB9lCiMBW1vbmV5lEsBjAdoaXN0b3J5lF2UjBBhbnRpX3RhbXBlcl9obWFjlIwoZDNkNmE5YzhhYTRhYWYwN2Y3MGVlZjBkM2QyYWQwZTRjMDYyOTQ1ZpR1Lg=="
-print(pickle.loads(base64.b64decode(a)))
+a='MTY4NTM1NDQ1OXxEdi1CQkFFQ180SUFBUkFCRUFBQUlfLUNBQUVHYzNSeWFXNW5EQVlBQkc1aGJXVUdjM1J5YVc1bkRBY0FCV2QxWlhOMHx2T2-HjLKJxaQawiIa-I4e_0d3oPGVy8lb7id8-_PSSQ='
+# print(pickle.loads(base64.b64decode(a)))

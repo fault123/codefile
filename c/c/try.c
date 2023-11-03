@@ -1,6 +1,7 @@
 #include<stdio.h>
 int main(){
-    char a="a";
-    printf("%c",a);
+    double d = 1.2333;
+    printf("%lf\n",d);
+    return 0;
 
 }

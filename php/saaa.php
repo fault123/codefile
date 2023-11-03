@@ -1,6 +1,6 @@
 <?php
-$a="username=admin??admin??";
-echo(strlen($a));
+// $a="username=admin??admin??";
+// echo(strlen($a));
 // mt_srand(1);
 // echo mt_rand();
 // echo "<br\>";

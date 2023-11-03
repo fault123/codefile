@@ -31,8 +31,8 @@
 import pickle
 import base64
 #a=b'\x80\x04\x95\x7f\x00\x00\x00\x00\x00\x00\x00]\x94(\x8c\x01f\x94\x8c\x01l\x94\x8c\x01a\x94\x8c\x01g\x94\x8c\x01_\x94\x8c\x01i\x94\x8c\x01s\x94\x8c\x01:\x94\x8c\x010\x94\x8c\x015\x94h\x03\x8c\x016\x94\x8c\x017\x94\x8c\x011\x94\x8c\x01c\x94h\x0bh\x0bh\x03\x8c\x01e\x94h\x01h\x0fh\x03h\r\x8c\x012\x94\x8c\x014\x94h\x0eh\x0eh\t\x8c\x018\x94\x8c\x01b\x94h\x0ch\x0bh\x0fh\x03h\x0b\x8c\x01d\x94\x8c\x013\x94h\th\x13h\x13e.'
-a='MTY4NTM1NDQ1OXxEdi1CQkFFQ180SUFBUkFCRUFBQUlfLUNBQUVHYzNSeWFXNW5EQVlBQkc1aGJXVUdjM1J5YVc1bkRBY0FCV2QxWlhOMHx2T2-HjLKJxaQawiIa-I4e_0d3oPGVy8lb7id8-_PSSQ='
-print(pickle.loads(base64.b64decode(a)))
+# a='MTY4NTM1NDQ1OXxEdi1CQkFFQ180SUFBUkFCRUFBQUlfLUNBQUVHYzNSeWFXNW5EQVlBQkc1aGJXVUdjM1J5YVc1bkRBY0FCV2QxWlhOMHx2T2-HjLKJxaQawiIa-I4e_0d3oPGVy8lb7id8-_PSSQ='
+# print(pickle.loads(base64.b64decode(a)))
 # print(pickle.loads(a))
 # import pickle
 # class A(object):
@@ -41,3 +41,7 @@ print(pickle.loads(base64.b64decode(a)))
 # a=A()
 # pickle1=pickle.dumps(a)
 # print(pickle1)
+# a="ZSCTF{bc4b90cf-258f-40c4-ec43-08b16766d9e5}"
+# print(base64.b64encode(pickle.dumps(a)))
+a='gASVLwAAAAAAAACMK1pTQ1RGe2JjNGI5MGNmLTI1OGYtNDBjNC1lYzQzLTA4YjE2NzY2ZDllNX2ULg=='
+print(base64.b64decode(a))

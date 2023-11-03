@@ -22,6 +22,8 @@
 // }
 #include<stdio.h>
 int main(){
-    srand('9');
-    printf("%d",rand());
+    char a[]= "Shino&Photon";
+    int c;
+    c=(int)a;
+    printf("%d",c);
 }

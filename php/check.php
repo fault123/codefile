@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 //»ñÈ¡cookie
 $cookie=$_COOKIE['user'];
 
@@ -17,4 +17,4 @@ if(isset($cookie)&&strpos($cookie,'admin')!==false){
     }
     else die("not from localhost");
 
-} -->
+}
