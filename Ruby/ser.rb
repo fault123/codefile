@@ -1,0 +1,4 @@
+require 'Base64'
+strings="BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiRTE4MDMzNmZjMGM5YWJhNzlhZjMz%0AZWQzN2IxMzJlNjAwMjdkM2M2NzA2NjgwMTkwN2ExNDM0Mzg5NjZlYjliZGYG%0AOwBGSSIKYm9hcmQGOwBGbzoKQm9hcmQGOgtAYm9hcmRbDkkiBiAGOwBUQAtA%0AC0ALQAtAC0ALQAtACw%3D%3D%0A--b44b550011cc677a770e76936b9ec3bfdfc01d37"
+payload=Marshal.load(Base64.decode64(strings))
+puts payload

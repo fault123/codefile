@@ -1,0 +1,1 @@
+class w_wuw_w:wake_up(key)->class gBoBg:tostring()
